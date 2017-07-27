@@ -23,8 +23,8 @@ xnoremap <Plug>(ArticulateStag) <C-W><C-]>
 nnoremap <Plug>(ArticulateStag) <C-W>]
 xnoremap <Plug>(ArticulateStag) <C-W>]
 " vertical tag
-nnoremap <silent> <Plug>(ArticulateVtag) :<C-U>vertical stag<CR>
-xnoremap <silent> <Plug>(ArticulateVtag) :<C-U>vertical stag<CR>
+nnoremap <silent> <Plug>(ArticulateVtag) :<C-U>exe "vertical" v:count1 "stag <C-R><C-W>"<CR>
+xnoremap <silent> <Plug>(ArticulateVtag) "zygv:<C-U>vertical stag <C-R>z<CR>
 " split tjump
 nnoremap <Plug>(ArticulateStjump) <C-W>g<C-]>
 xnoremap <Plug>(ArticulateStjump) <C-W>g<C-]>
